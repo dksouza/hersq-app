@@ -81,9 +81,13 @@ export default function AuthGate({ onLogin }) {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="email" className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">
+              <label htmlFor="email" className="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">
                 Adresse Email Privée
               </label>
+              <p className="text-xs text-gold-400/90 mb-2.5 flex items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mr-1.5 inline-block shrink-0" />
+                Utilisez l'adresse email utilisée lors de votre achat.
+              </p>
               <div className="relative">
                 <input
                   id="email"
@@ -123,17 +127,7 @@ export default function AuthGate({ onLogin }) {
             </button>
           </form>
 
-          {/* Quick Demo Access Trigger */}
-          <div className="mt-4 pt-4 border-t border-white/10 text-center">
-            <button
-              onClick={handleDemoLogin}
-              type="button"
-              className="text-xs text-gold-400/90 hover:text-gold-300 underline underline-offset-4 flex items-center justify-center mx-auto space-x-1.5 transition-colors py-1"
-            >
-              <Eye className="w-3.5 h-3.5" />
-              <span>Tester l'accès instantané (Mode Démo)</span>
-            </button>
-          </div>
+
 
           {/* Security & Confidentiality Badges */}
           <div className="mt-6 grid grid-cols-2 gap-3 text-[11px] text-gray-400 pt-4 border-t border-white/5">
