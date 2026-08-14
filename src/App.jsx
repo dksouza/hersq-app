@@ -31,9 +31,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0b0b0b] text-gray-100 font-sans selection:bg-gold-500 selection:text-black">
-      {/* Top Fixed Announcement & Server Sync Bar */}
-      <AnnouncementBar />
-
       {/* Main Navigation */}
       <Navbar userEmail={userEmail} onLogout={handleLogout} />
 
